@@ -1,0 +1,12 @@
+Dtos 20% suelto en body. 
+En el header el h1 y sticky
+En el main 3 divs Batman, Harley y batman.
+
+Cada div a su vez tiene
+DIV IMAGEN
+DIV TEXTO
+DIV IMAGEN CON POSITION ABSOLUT foto perfil
+
+display inline block para poner los 3 al lado.
+
+boton ver mas es un div con un ancor.
