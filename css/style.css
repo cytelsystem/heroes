@@ -2,7 +2,7 @@
 
 /**********************HEADER************************** */
 
-header {
+.contenedorHeader{
   display: flex;
   flex-direction: column;
 }
