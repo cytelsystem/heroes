@@ -1,3 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 /**********************HEADER************************** */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTop {
+  width: 1024px;
+  background: #1cd1b0;
+  height: 38px;
+}
+
+.headerTop h3 {
+  width: 111px;
+  height: 18px;
+  left: 10px;
+  top: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.headerbottom {
+  position: absolute;
+  width: 1024px;
+  height: 101px;
+  left: 0px;
+  top: 38px;
+
+  background: #00669f;
+
+}
+
+.headerbottom h1{´
+    position: absolute;
+width: 128px;
+height: 47px;
+left: 28px;
+top: 66px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 47px;
+}
