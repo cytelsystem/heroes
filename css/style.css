@@ -1,1 +1,74 @@
+<<<<<<< HEAD
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --fon1: "Roboto", sans-serif;
+  --negro1: #000000;
+  --negro2: #333333;
+  --azul1: #00669f;
+  --white1: #fff9f9;
+  --white2: #f3f3f3;
+  --rojo1: #cc2424;
+  --verde: #1cd1b0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fon1);
+  font-weight: 300px;
+  background-color: red;
+}
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**********************HEADER************************** */
+
+.contenedorHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTop {
+  background: var(--verde);
+  height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+}
+
+.headerTop h3 {
+  font-family: Roboto;
+  font-size: 15px;
+  color: var(--negro1);
+}
+
+/* ***************************************** */
+.headerbottom {
+  height: 101px;
+  background: var(--azul1);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.headerbottom h1 {
+  font-family: Roboto;
+  font-size: 40px;
+}
+>>>>>>> header
