@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --fon1: "Roboto", sans-serif;
-  --negro1: #222222;
-  --rojo1: #f51706;
-  --rojo2: #fc200c;
-  --verde1: #4caf50;
-  --white1: #ffffff;
+  --negro1: #000000;
+  --negro2: #333333;
+  --azul1: #00669f;
+  --white1: #fff9f9;
   --white2: #f3f3f3;
+  --rojo1: #cc2424;
+  --verde: #1cd1b0;
 }
 
 * {
@@ -16,8 +17,9 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--fon1);
   font-weight: 300px;
+  background-color: red;
 }
 img {
   max-width: 100%;
@@ -31,55 +33,38 @@ a {
   text-decoration: none;
 }
 
-
 /**********************HEADER************************** */
 
-.contenedorHeader{
+.contenedorHeader {
   display: flex;
   flex-direction: column;
 }
 
 .headerTop {
-  width: 1024px;
-  background: #1cd1b0;
+  background: var(--verde);
   height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
 }
 
 .headerTop h3 {
-  width: 111px;
-  height: 18px;
-  left: 10px;
-  top: 10px;
-
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
-  line-height: 18px;
-  color: #000000;
+  color: var(--negro1);
 }
 
+/* ***************************************** */
 .headerbottom {
-  position: absolute;
-  width: 1024px;
   height: 101px;
-  left: 0px;
-  top: 38px;
-
-  background: #00669f;
-
+  background: var(--azul1);
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
-.headerbottom h1{´
-    position: absolute;
-width: 128px;
-height: 47px;
-left: 28px;
-top: 66px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 47px;
+.headerbottom h1 {
+  font-family: Roboto;
+  font-size: 40px;
 }
