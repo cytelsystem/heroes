@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --fon1: "Roboto", sans-serif;
-  --negro1: #222222;
-  --rojo1: #f51706;
-  --rojo2: #fc200c;
-  --verde1: #4caf50;
-  --white1: #ffffff;
+  --negro1: #000000;
+  --negro2: #333333;
+  --azul1: #00669f;
+  --white1: #fff9f9;
   --white2: #f3f3f3;
+  --rojo1: #cc2424;
+  --verde: #1cd1b0;
 }
 
 * {
@@ -16,8 +17,9 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: var(--fon1);
   font-weight: 300px;
+  background-color: red;
 }
 img {
   max-width: 100%;
