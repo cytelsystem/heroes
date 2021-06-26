@@ -68,9 +68,14 @@ a {
   width: 120px;
   height: 118px;
   border-radius: 50%;
+  position: relative;
+  margin-top: -60px;
 }
+
 .divprincipaltarge .divtargecont {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: justify;
+  padding: 10%;
 }
