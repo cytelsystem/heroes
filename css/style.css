@@ -154,7 +154,13 @@ a {
   font-weight: normal;
   font-size: 30px;
 }
+
 .divtargecont p {
+  font-family: var(--fon1);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--negro1);
 }
 
 .footercontenedor h2 {
