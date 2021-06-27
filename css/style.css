@@ -31,5 +31,6 @@ a {
   text-decoration: none;
 }
 
-
-**********************FOOTER********************
+**********************FOOTER******************** .footercontenedor {
+  max-width: 1024;
+}
