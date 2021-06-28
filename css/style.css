@@ -7,8 +7,9 @@
   --azul1: #00669f;
   --white1: #fff9f9;
   --white2: #f3f3f3;
-  --rojo1: #cc2424;
   --verde: #1cd1b0;
+  --whiteoscuro: #e5e5e5;
+  --Pshadow1: 0px 10px 7px rgb(0 0 0 / 25%);
 }
 
 * {
@@ -37,6 +38,9 @@ a {
 /**********************HEADER************************** */
 
 .contenedorHeader {
+  margin: 0 auto;
+  margin: 0 auto;
+  max-width: var(--maxw);
   display: flex;
   flex-direction: column;
 }
@@ -61,30 +65,28 @@ a {
   height: 101px;
   background: var(--azul1);
   display: flex;
-}
-/* **********************FOOTER********************  */
-.footercontenedor {
-  max-width: var(--maxw);
-  height: 51px;
-  display: flex;
-  background-color: var(--azul1);
   align-items: center;
-  padding: 20px;
-  color: red;
+  padding: 30px;
+  box-shadow: 0px 10px 7px rgb(0 0 0 / 25%);
+  position: sticky;
+  top: 0;
 }
 
 .headerbottom h1 {
-  font-family: Roboto;
   font-size: 40px;
+  font-family: var(--fon1);
+  font-style: normal;
+  font-weight: normal;
 }
+
 /* ******************MAIN****************** */
 
 .maincontenedor {
   margin: 0 auto;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: var(--maxw);
   padding: 150px 15px 150px;
-  /* background-color: green; */
+  background-color: var(--whiteoscuro);
   display: flex;
 }
 .maincontenedor .divprincipaltarge {
@@ -108,7 +110,6 @@ a {
 }
 
 .divprincipaltarge .divbannertarge {
-  /* background-color: mediumvioletred; */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -129,7 +130,6 @@ a {
 }
 
 .divprincipaltarge .divfototarge {
-  /* background-color: mediumvioletred; */
   width: 120px;
   height: 118px;
   border-radius: 50%;
@@ -176,10 +176,22 @@ a {
   color: var(--white1);
 }
 
+/* **********************FOOTER********************  */
+.footercontenedor {
+  margin: 0 auto;
+  margin: 0 auto;
+  max-width: var(--maxw);
+  height: 51px;
+  display: flex;
+  background-color: var(--azul1);
+  align-items: center;
+  padding: 20px;
+}
+
 .footercontenedor h2 {
   font-family: var(--fon1);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  color: var(--negro1);
+  color: var(--white1);
 }
