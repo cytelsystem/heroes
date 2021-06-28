@@ -7,9 +7,12 @@
   --azul1: #00669f;
   --white1: #fff9f9;
   --white2: #f3f3f3;
+  --white3: #ffffff;
   --verde: #1cd1b0;
   --whiteoscuro: #e5e5e5;
+  --backgroundImg: rgb(236, 221, 221);
   --Pshadow1: 0px 10px 7px rgb(0 0 0 / 25%);
+  --Pshadow2: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -21,7 +24,7 @@
 body {
   font-family: var(--fon1);
   font-weight: 300px;
-  /* background-color: red; */
+  height: 180vh;
 }
 img {
   max-width: 100%;
@@ -36,16 +39,10 @@ a {
 }
 
 /**********************HEADER************************** */
-
-.contenedorHeader {
+.headerTop {
   margin: 0 auto;
   margin: 0 auto;
   max-width: var(--maxw);
-  display: flex;
-  flex-direction: column;
-}
-
-.headerTop {
   background: var(--verde);
   height: 38px;
   display: flex;
@@ -59,15 +56,29 @@ a {
   font-size: 15px;
   color: var(--negro1);
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
 
-/* ***************************************** */
+.contenedorHeader {
+  margin: 0 auto;
+  margin: 0 auto;
+  max-width: var(--maxw);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+/* ************************** */
 .headerbottom {
   height: 101px;
   background: var(--azul1);
   display: flex;
   align-items: center;
   padding: 30px;
-  box-shadow: 0px 10px 7px rgb(0 0 0 / 25%);
+  box-shadow: var(--Pshadow1);
   position: sticky;
   top: 0;
 }
@@ -86,26 +97,28 @@ a {
   margin: 0 auto;
   max-width: var(--maxw);
   padding: 150px 15px 150px;
-  background-color: var(--whiteoscuro);
+  background-color: var(--white3);
   display: flex;
 }
 .maincontenedor .divprincipaltarge {
-  /* background-color: hotpink; */
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 30%;
   margin: 0 auto;
+  box-shadow: var(--Pshadow2);
 }
 
 .divprincipaltarge .divbannertarge1 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/posilgadebatman.png);
 }
 .divprincipaltarge .divbannertarge2 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/banerharley.png);
 }
 .divprincipaltarge .divbannertarge3 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/posilgadebatman.png);
 }
 
@@ -120,12 +133,15 @@ a {
 }
 
 .divprincipaltarge .divfototarge1 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/batman.png);
 }
 .divprincipaltarge .divfototarge2 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/HarleyQuinn.png);
 }
 .divprincipaltarge .divfototarge3 {
+  background-color: var(--backgroundImg);
   background-image: url(../img/batman.png);
 }
 
