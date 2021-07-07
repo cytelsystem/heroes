@@ -41,7 +41,6 @@ a {
 /**********************HEADER************************** */
 .headerTop {
   margin: 0 auto;
-  margin: 0 auto;
   max-width: var(--maxw);
   background: var(--verde);
   height: 38px;
@@ -96,17 +95,24 @@ header {
   margin: 0 auto;
   margin: 0 auto;
   max-width: var(--maxw);
-  padding: 150px 15px 150px;
+  /* padding: 150px 15px 150px; */
   background-color: var(--white3);
   display: flex;
+  /* ***************** */
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 15px 15px;
 }
 .maincontenedor .divprincipaltarge {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 30%;
+  max-width: 40%;
+  height: 600px;
   margin: 0 auto;
   box-shadow: var(--Pshadow2);
+  padding: 4%;
+  justify-content: space-between;
 }
 
 .divprincipaltarge .divbannertarge1 {
@@ -160,7 +166,6 @@ header {
   text-align: justify;
   padding: 10%;
   padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .divtargecont h2 {
@@ -180,21 +185,22 @@ header {
   color: var(--negro1);
 }
 
-.divtargecont a {
+.divbtn {
+}
+.divbtn a {
   background-color: var(--azul1);
   padding: 15px 25px 15px 25px;
-  margin: 10%;
   font-family: var(--fon1);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   color: var(--white2);
   color: var(--white1);
+  border-radius: 7px;
 }
 
 /* **********************FOOTER********************  */
 .footercontenedor {
-  margin: 0 auto;
   margin: 0 auto;
   max-width: var(--maxw);
   height: 51px;
@@ -202,9 +208,10 @@ header {
   background-color: var(--azul1);
   align-items: center;
   padding: 20px;
+  justify-content: space-between;
 }
 
-.footercontenedor h2 {
+.footerleft h2 {
   font-family: var(--fon1);
   font-style: normal;
   font-weight: normal;
@@ -212,9 +219,17 @@ header {
   color: var(--white1);
 }
 
+.footerright {
+  background-color: var(--backgroundImg);
+  background-image: url(../img/Github.svg);
+  height: 50px;
+  width: 100px;
+}
+
 @media screen and (max-width: 768px) {
   .maincontenedor {
     flex-wrap: wrap;
+    padding: 150px 15px 150px;
   }
 
   .maincontenedor .divprincipaltarge {
